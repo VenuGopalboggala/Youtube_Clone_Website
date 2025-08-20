@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Watch Video</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .video-player {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    iframe {
+      width: 100%;
+      height: 540px;
+    }
+    .video-details {
+      max-width: 960px;
+      margin: 20px auto;
+    }
+    .video-title {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .video-author {
+      color: gray;
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Dynamic video content will load here -->
+  <div class="video-player">
+    <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="video-details">
+    <div id="video-title" class="video-title"></div>
+    <div id="video-author" class="video-author"></div>
+    <p id="video-description"></p>
+  </div>
+
+  <script>
+    const videos = {
+      1: {
+        title: "Entertainment Guaranteed on Netflix",
+        author: "Netflix India",
+        views: "1.8M views",
+        date: "10 days ago",
+        description: "This is a detailed description of the Netflix video.",
+        embed: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      },
+      2: {
+        title: "Amazing Travel Vlog",
+        author: "Travel Channel",
+        views: "923K views",
+        date: "2 weeks ago",
+        description: "Explore the beauty of the world.",
+        embed: "https://www.youtube.com/embed/ScMzIvxBSi4"
+      }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const videoId = params.get("video");
+
+    const video = videos[videoId];
+
+    if (video) {
+      document.getElementById("video-frame").src = video.embed;
+      document.getElementById("video-title").textContent = video.title;
+      document.getElementById("video-author").textContent = `${video.author} • ${video.views} • ${video.date}`;
+      document.getElementById("video-description").textContent = video.description;
+    } else {
+      document.body.innerHTML = "<h2>Video not found</h2>";
+    }
+  </script>
+
+</body>
+</html>
