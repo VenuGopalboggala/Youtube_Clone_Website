@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Clone</title>
+   
+  </head>
+  <link rel="stylesheet" href="styles/generla.css">
+   <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/vedio.css">''
+
+
+    <!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <body>
+    <div class="header">
+      <div class="left-section">
+       <img class="hamburg-menu" src="icons/Menu.png">
+       <img class="youtube-logo" src="icons/LOGO-YOU.png">
+      </div>
+      <div class="middle-section">
+         <input class="search-bar" type="text" placeholder="Search">
+         <div class="search-suggestions" id="suggestionBox">
+          <ul>
+            <li>netflix trailers</li>
+            <li>anime edits</li>
+            <li>resume tips for freshers</li>
+            <li>latest cricket highlights</li>
+            <li>how to play guitar</li>
+          </ul>
+        </div>
+
+         <button class="search-button">
+          <img src="icons/Search.png">
+         </button>
+         <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/Mic.png">
+         </button>
+      </div>
+      <div class="right-section">
+        <i class="fas fa-video create-icon"></i>
+        <img class="upload-icon" src="icons/apps.png">
+        <img class="Bell-icon" src="icons/Notification.png">
+        <img class="current-user" src="icons/channels4_profile.jpg">
+        <div class="create-dropdown" id="createDropdown">
+          <ul>
+            <li><i class="fas fa-upload"></i> Upload Video</li>
+            <li><i class="fas fa-broadcast-tower"></i> Go Live</li>
+          </ul>
+        </div>
+
+      </div>
+        <div class="sidebar">
+          <ul>
+            <li><i class="fas fa-home"></i> Home</li>
+            <li><i class="fas fa-fire"></i> Trending</li>
+            <li><i class="fas fa-play-circle"></i> Subscriptions</li>
+            <li><i class="fas fa-photo-video"></i> Library</li>
+            <li><i class="fas fa-history"></i> History</li>
+            <li><i class="fas fa-clock"></i> Watch Later</li>
+            <li><i class="fas fa-thumbs-up"></i> Liked Videos</li>
+            <li><i class="fas fa-list"></i> Your Videos</li>
+
+            <hr>
+
+            <li><i class="fas fa-compass"></i> Explore</li>
+            <li><i class="fas fa-music"></i> Music</li>
+            <li><i class="fas fa-gamepad"></i> Gaming</li>
+            <li><i class="fas fa-newspaper"></i> News</li>
+            <li><i class="fas fa-trophy"></i> Sports</li>
+
+            <hr>
+
+            <li><i class="fas fa-cog"></i> Settings</li>
+            <li><i class="fas fa-flag"></i> Report history</li>
+            <li><i class="fas fa-question-circle"></i> Help</li>
+            <li><i class="fas fa-comment-dots"></i> Send feedback</li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="video-grid">
+            <div class="video-preview">
+              <a href="watch.html?video=1">
+          <div class="thumbnail-container">
+            <img class="thumbnail" src="thumbnails/t1.avif" />
+            <div class="video-time">10:34</div> <!-- Timestamp -->
+          </div>
+          </a>
+
+          <div class="vedio-info-grid">
+            <div class="channel-picture">
+              <img src="profilepics/Channel-1.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">Entertainment Guaranteed on Netflix</p>
+              <p class="video-author">Netflix India</p>
+              <p class="video-stats">1.8M views &#183; 10 days ago</p>
+            </div>
+          </div>
+        </div>  
+
+      <div class="video-preview">
+         <div class="thumbnail-container">
+        <img class="thumbnail" src="thumbnails/t2.avif" />
+            <div class="video-time">10:34</div>
+            </div>
+        <div class="vedio-info-grid">
+          <div class="channel-picture">
+            <img src="profilepics/Channel-2.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">I Tried Anime Shorts for 19 Days! And This Happened!</p>
+            <p class="video-author">Grow Thest</p>
+            <p class="video-stats">113k views &#183; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-container">
+        <img class="thumbnail" src="thumbnails/t3.avif" />
+            <div class="video-time">10:34</div>
+            </div>
+        <div class="vedio-info-grid">
+          <div class="channel-picture">
+            <img src="profilepics/Channel-3.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Ed Sheeran - Sapphire (Official Music Video)</p>
+            <p class="video-author">Ed Sheeran</p>
+            <p class="video-stats">30M views &#183; 7 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+         <div class="thumbnail-container">
+        <img class="thumbnail" src="thumbnails/thumbnail4.avif" />
+            <div class="video-time">10:34</div>
+            </div>
+        <div class="vedio-info-grid">
+          <div class="channel-picture">
+            <img src="profilepics/Channel-4.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">World's Best Cricketers Vs Impossible Batting Challenge</p>
+            <p class="video-author">Red Bull</p>
+            <p class="video-stats">3.4M views &#183; 23 hours ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+         <div class="thumbnail-container">
+        <img class="thumbnail" src="thumbnails/Thumbnail5.avif" />
+            <div class="video-time">10:34</div>
+         </div>
+        <div class="vedio-info-grid">
+          <div class="channel-picture">
+            <img src="profilepics/Channel-5.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">The Resume that got me into google | Telugu | Tips to make your resume better</p>
+            <p class="video-author">Sruthi.Ponugoti</p>
+            <p class="video-stats">25k views &#183; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+         <div class="thumbnail-container">
+        <img class="thumbnail" src="thumbnails/t2.avif" />
+            <div class="video-time">10:34</div>
+         </div>
+        <div class="vedio-info-grid">
+          <div class="channel-picture">
+            <img src="profilepics/Channel-2.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">I Tried Anime Shorts for 19 Days! And This Happened!</p>
+            <p class="video-author">Grow Thest</p>
+            <p class="video-stats">113k views &#183; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+       <div class="video-preview">
+         <div class="thumbnail-container">
+        <img class="thumbnail" src="thumbnails/t2.avif" />
+            <div class="video-time">10:34</div>
+            </div>
+        <div class="vedio-info-grid">
+          <div class="channel-picture">
+            <img src="profilepics/Channel-2.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">I Tried Anime Shorts for 19 Days! And This Happened!</p>
+            <p class="video-author">Grow Thest</p>
+            <p class="video-stats">113k views &#183; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+       <div class="video-preview">
+        <div class="thumbnail-container">
+        <img class="thumbnail" src="thumbnails/t2.avif" />
+            <div class="video-time">10:34</div>
+            </div>
+        <div class="vedio-info-grid">
+          <div class="channel-picture">
+            <img src="profilepics/Channel-2.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">I Tried Anime Shorts for 19 Days! And This Happened!</p>
+            <p class="video-author">Grow Thest</p>
+            <p class="video-stats">113k views &#183; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+       <div class="video-preview">
+        <div class="thumbnail-container">
+        <img class="thumbnail" src="thumbnails/t2.avif" />
+            <div class="video-time">10:34</div>
+        </div>
+        <div class="vedio-info-grid">
+          <div class="channel-picture">
+            <img src="profilepics/Channel-2.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">I Tried Anime Shorts for 19 Days! And This Happened!</p>
+            <p class="video-author">Grow Thest</p>
+            <p class="video-stats">113k views &#183; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+       <div class="video-preview">
+        <div class="thumbnail-container">
+        <img class="thumbnail" src="thumbnails/t2.avif" />
+            <div class="video-time">10:34</div>
+            </div>
+        <div class="vedio-info-grid">
+          <div class="channel-picture">
+            <img src="profilepics/Channel-2.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">I Tried Anime Shorts for 19 Days! And This Happened!</p>
+            <p class="video-author">Grow Thest</p>
+            <p class="video-stats">113k views &#183; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+       <div class="video-preview">
+        <div class="thumbnail-container">
+        <img class="thumbnail" src="thumbnails/t2.avif" />
+            <div class="video-time">10:34</div>
+            </div>
+        <div class="vedio-info-grid">
+          <div class="channel-picture">
+            <img src="profilepics/Channel-2.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">I Tried Anime Shorts for 19 Days! And This Happened!</p>
+            <p class="video-author">Grow Thest</p>
+            <p class="video-stats">113k views &#183; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+       <div class="video-preview">
+          <div class="thumbnail-container">
+        <img class="thumbnail" src="thumbnails/t2.avif" />
+            <div class="video-time">10:34</div>
+            </div>
+        <div class="vedio-info-grid">
+          <div class="channel-picture">
+            <img src="profilepics/Channel-2.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">I Tried Anime Shorts for 19 Days! And This Happened!</p>
+            <p class="video-author">Grow Thest</p>
+            <p class="video-stats">113k views &#183; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+       <div class="video-preview">
+          <div class="thumbnail-container">
+        <img class="thumbnail" src="thumbnails/t2.avif" />
+            <div class="video-time">10:34</div>
+            </div>
+        <div class="vedio-info-grid">
+          <div class="channel-picture">
+            <img src="profilepics/Channel-2.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">I Tried Anime Shorts for 19 Days! And This Happened!</p>
+            <p class="video-author">Grow Thest</p>
+            <p class="video-stats">113k views &#183; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  <script>
+  const menuIcon = document.querySelector('.hamburg-menu');
+  const sidebar = document.querySelector('.sidebar');
+
+  menuIcon.addEventListener('click', () => {
+    sidebar.style.display = (sidebar.style.display === 'block') ? 'none' : 'block';
+  });
+</script>
+<script>
+  const createIcon = document.querySelector('.create-icon');
+  const dropdown = document.getElementById('createDropdown');
+
+  createIcon.addEventListener('click', () => {
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Optional: Close dropdown when clicking outside
+  window.addEventListener('click', (event) => {
+    if (!createIcon.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = 'none';
+    }
+  });
+</script>
+<script>
+  const searchBar = document.querySelector('.search-bar');
+  const suggestionBox = document.getElementById('suggestionBox');
+
+  searchBar.addEventListener('focus', () => {
+    suggestionBox.style.display = 'block';
+  });
+
+  searchBar.addEventListener('input', () => {
+    suggestionBox.style.display = searchBar.value.trim() === '' ? 'block' : 'none';
+  });
+
+  document.addEventListener('click', function(event) {
+    if (!searchBar.contains(event.target) && !suggestionBox.contains(event.target)) {
+      suggestionBox.style.display = 'none';
+    }
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    // Array of video data objects
+    const videos = [
+        {
+            thumbnail: 'thumbnails/t1.avif',
+            time: '14:20',
+            profilePic: 'profilepics/Channel-1.jpg',
+            title: 'Entertainment Guaranteed on Netflix',
+            author: 'Netflix India',
+            stats: '1.8M views · 10 days ago',
+            link: 'watch.html?video=1'
+        },
+        {
+            thumbnail: 'thumbnails/t2.avif',
+            time: '8:22',
+            profilePic: 'profilepics/Channel-2.jpg',
+            title: 'I Tried Anime Shorts for 19 Days! And This Happened!',
+            author: 'Grow Thest',
+            stats: '113k views · 1 month ago',
+            link: 'watch.html?video=2'
+        },
+        {
+            thumbnail: 'thumbnails/t3.avif',
+            time: '9:05',
+            profilePic: 'profilepics/Channel-3.jpg',
+            title: 'Ed Sheeran - Sapphire (Official Music Video)',
+            author: 'Ed Sheeran',
+            stats: '30M views · 7 days ago',
+            link: 'watch.html?video=3'
+        },
+        // ... Add all your other videos here
+    ];
+
+    const videoGrid = document.querySelector('.video-grid');
+    videoGrid.innerHTML = ''; // Clear the existing static video
+
+    // Loop through the videos array and generate HTML for each one
+    videos.forEach(video => {
+        const videoHtml = `
+            <div class="video-preview">
+                <a href="${video.link}">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="${video.thumbnail}" />
+                        <div class="video-time">${video.time}</div>
+                    </div>
+                </a>
+                <div class="vedio-info-grid">
+                    <div class="channel-picture">
+                        <img src="${video.profilePic}" />
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">${video.title}</p>
+                        <p class="video-author">${video.author}</p>
+                        <p class="video-stats">${video.stats}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+        videoGrid.innerHTML += videoHtml;
+    });
+
+    // --- Place your other JS code from the original file here ---
+    // Sidebar toggle, create dropdown, etc.
+});
+// Add this inside your main script, after you've defined the 'videos' array
+
+// const searchBar = document.querySelector('.search-bar'); // Already declared above
+const videoGrid = document.querySelector('.video-grid');
+
+function renderVideos(videoArray) {
+    videoGrid.innerHTML = ''; // Clear the grid first
+    videoArray.forEach(video => {
+        const videoHtml = `
+            <div class="video-preview">
+                <a href="${video.link}">...</a>
+                <div class="vedio-info-grid">...</div>
+            </div>
+        `;
+        videoGrid.innerHTML += videoHtml;
+    });
+}
+
+
+searchBar.addEventListener('input', (e) => {
+    const searchTerm = e.target.value.toLowerCase();
+    
+    // Filter the videos array based on the search term
+    const filteredVideos = videos.filter(video => {
+        return video.title.toLowerCase().includes(searchTerm) || 
+               video.author.toLowerCase().includes(searchTerm);
+    });
+    
+    // Re-render the grid with only the filtered videos
+    renderVideos(filteredVideos);
+});
+
+// Initially render all videos when the page loads
+renderVideos(videos);
+// New JavaScript for sidebar
+menuIcon.addEventListener('click', () => {
+  sidebar.classList.toggle('active');
+});
+</script>
+
+</body> 
+</html>
